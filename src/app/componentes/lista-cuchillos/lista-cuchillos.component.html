@@ -1,0 +1,21 @@
+<div>
+  <ul>
+  @if(listaCuchillos.length == 0)
+  {
+    <p>Agrega cuchillos para que se vean</p>
+  } @else {
+    @for (cuchillo of listaCuchillos; track $index){
+      <li>
+        nombre: {{ cuchillo.nombre }} -
+        tipo: {{ cuchillo.tipo }} -
+        tipoDeFilo: {{ cuchillo.tipoDeFilo }} -
+        materiaDeHoja: {{ cuchillo.materiaDeHoja }} -
+        materiaDelCabo: {{ cuchillo.materiaDelCabo }} -
+        longitudHoja: {{ cuchillo.longitudHoja }} -
+        longitudTotal: {{ cuchillo.longitudTotal }}
+        <button (click)="borrarCuchillo($index)">Borrar cuchillo</button>
+      </li>
+    }
+  }
+  </ul>
+</div>

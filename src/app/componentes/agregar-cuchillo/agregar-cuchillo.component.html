@@ -1,0 +1,47 @@
+<section>
+  <fieldset>
+    <form [formGroup]="formulario" (ngSubmit)="agregarYmandarCuchillo()" >
+      <div>
+        <label>Nombre:</label>
+        <input type="text" formControlName="nombre">
+      </div>
+      <div>
+        <label for="TipoCuchi">Tipo:</label>
+        <select id="TipoCuchi" formControlName="tipo">
+          <option *ngFor="let opcion of tipoCuchillo" [value]="opcion">{{ opcion }}</option>
+        </select>
+      </div>
+      <div>
+        <label for="TipoFilo">Tipo filo:</label>
+        <select id="TipoFilo" formControlName="tipoDeFilo">
+          <option *ngFor="let opcion of tipoFilo" [value]="opcion">{{ opcion }}</option>
+        </select>
+      </div>
+      <div>
+        <label for="MaterialHoja">Material de la Hoja:</label>
+        <select id="MaterialHoja" formControlName="materiaDeHoja">
+          <option *ngFor="let opcion of materialHoja" [value]="opcion">{{ opcion }}</option>
+        </select>
+      </div>
+      <div>
+        <label for="MaterialCabo">Material del cabo:</label>
+        <select id="MaterialCabo" formControlName="materiaDelCabo">
+          <option *ngFor="let opcion of materialMango" [value]="opcion">{{ opcion }}</option>
+        </select>
+      </div>
+      <div>
+        <label>longitud de la Hoja:</label>
+        <input type="text" formControlName="longitudHoja">
+      </div>
+      <div>
+        <label>longitud Total:</label>
+        <input type="text" formControlName="longitudTotal">
+      </div>
+
+
+
+      <button type="submit" [disabled]="formulario.invalid">Enviar</button>
+
+    </form>
+  </fieldset>
+</section>

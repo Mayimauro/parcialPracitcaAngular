@@ -1,0 +1,26 @@
+*{
+  margin: -10px;
+  padding: 10px;
+  color: #f2f5f7;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+nav{
+  height: 50px;
+  width: 100%;
+  background: #000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  position: fixed;
+  z-index: 9;
+
+}
+
+button{
+  background: none;
+  margin: 2px;
+  height: 50px;
+  border-radius: 10px;
+}
