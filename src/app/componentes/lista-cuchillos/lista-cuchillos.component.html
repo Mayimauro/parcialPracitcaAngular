@@ -14,6 +14,7 @@
         longitudHoja: {{ cuchillo.longitudHoja }} -
         longitudTotal: {{ cuchillo.longitudTotal }}
         <button (click)="borrarCuchillo($index)">Borrar cuchillo</button>
+        <button [routerLink]="['editar-cuchillo',$index]">Editar cuchillo</button>
       </li>
     }
   }

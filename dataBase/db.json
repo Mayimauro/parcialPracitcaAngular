@@ -1,3 +1,14 @@
 {
-  "cuchillos": []
+  "cuchillos": [
+    {
+      "id": "0",
+      "nombre": "cuchi 1",
+      "tipo": "Santoku",
+      "tipoDeFilo": "Liso",
+      "materiaDeHoja": "Acero inoxidable",
+      "materiaDelCabo": "Madera",
+      "longitudHoja": "10cm",
+      "longitudTotal": "5cm"
+    }
+  ]
 }

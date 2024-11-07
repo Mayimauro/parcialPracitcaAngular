@@ -15,7 +15,8 @@ export class CuchillosService {
   getCuchillos(): Observable<CuchillosInterface[]> {
     return this.http.get<CuchillosInterface[]>(this.urlDataBase);
   }
-  getCuchillosById(id: string): Observable<CuchillosInterface> {
+
+  getCuchillosById(id: string | null): Observable<CuchillosInterface> {
     return this.http.get<CuchillosInterface>(`${this.urlDataBase}/${id}`);
   }
 

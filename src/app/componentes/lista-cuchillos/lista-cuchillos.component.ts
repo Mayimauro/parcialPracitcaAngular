@@ -18,6 +18,7 @@ export class ListaCuchillosComponent implements OnInit {
   cuchillosService = inject(CuchillosService)
 
 
+
   ngOnInit(): void {
     this.traerCuchillosDeJson();
   }
@@ -42,7 +43,4 @@ export class ListaCuchillosComponent implements OnInit {
       }
     })
   }
-
-
-
 }
